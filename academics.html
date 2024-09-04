@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics - FAST National University of Computer and Emerging Sciences</title>
+ 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        nav {
+            background-color: #34495e;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none; 
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav a {
+            color: #ecf0f1;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-size: 1em;
+            transition: background 0.3s, color 0.3s;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            background-color: #1abc9c;
+            color: #fff;
+            border-radius: 30px;
+        }
+
+        .hero-bg {
+            background: url('img.png') no-repeat center center/cover;
+            color: #fff;
+            padding: 80px 20px;
+            text-align: center;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .hero-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+
+        .hero-bg h2 {
+            font-size: 2.5em;
+            color: #1abc9c;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-bg p {
+            font-size: 1.2em;
+            color: #ecf0f1;
+            line-height: 1.6;
+            position: relative;
+            z-index: 2;
+        }
+
+        .content {
+            padding: 40px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .content h2 {
+            font-size: 2.5em;
+            color: #1abc9c;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .content p {
+            font-size: 1em;
+            color: #bdc3c7;
+            line-height: 1.8;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .departments {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-bottom: 60px;
+        }
+
+        .department {
+            background-color: #34495e;
+            color: #ecf0f1;
+            padding: 20px;
+            margin: 10px;
+            width: 30%;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .department:hover {
+            transform: scale(1.05);
+        }
+
+        .department h3 {
+            font-size: 1.8em;
+            color: #1abc9c;
+            margin-bottom: 10px;
+        }
+
+        .department p {
+            font-size: 0.9em;
+            color: #bdc3c7;
+            line-height: 1.6;
+        }
+
+        .department a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.3s;
+        }
+
+        .department a:hover {
+            color: #1abc9c;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 40px;
+        }
+
+        table, th, td {
+            border: 1px solid #1abc9c;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #34495e;
+            color: #ecf0f1;
+        }
+
+        td {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            border-top: 1px solid #1abc9c;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer a {
+            color: #1abc9c;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #16a085;
+        }
+
+        @media (max-width: 768px) {
+            .department {
+                width: 100%;
+                margin: 10px 0;
+            }
+
+            .hero-bg {
+                padding: 60px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="admissions.html">Admission</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero-bg">
+        <h2>Academics at FAST University</h2>
+        <p>Explore our diverse range of academic programs and discover how FAST University can help you achieve your educational and career goals.</p>
+    </div>
+
+    <div class="content">
+        <h2>Explore Our Departments and Courses</h2>
+        <p>FAST University offers a wide range of courses designed to provide students with the knowledge and skills needed to succeed in their chosen fields. Explore our departments below to learn more about the courses we offer.</p>
+
+        <div class="departments">
+            <div class="department">
+                <h3><a href="cs.html">Computing Department</a></h3>
+                <p>Our Computer Science department offers courses in programming, algorithms, data structures, artificial intelligence, machine learning, and more. We prepare students to excel in the tech industry.</p>
+                <div>
+                    <a href="cs_programming.html">Programming</a><br>
+                    <a href="cs_algorithms.html">Algorithms</a><br>
+                    <a href="cs_data_structures.html">Data Structures</a><br>
+                    <a href="cs_ai.html">Artificial Intelligence</a><br>
+                    <a href="cs_ml.html">Machine Learning</a><br>
+                </div>
+            </div>
+            <div class="department">
+                <h3><a href="ee.html">Electrical Engineering</a></h3>
+                <p>In the Electrical Engineering department, students can explore courses in electronics, telecommunications, signal processing, and embedded systems, laying the foundation for innovative engineering solutions.</p>
+                <div>
+                    <a href="ee_electronics.html">Electronics</a><br>
+                    <a href="ee_telecom.html">Telecommunications</a><br>
+                    <a href="ee_signal_processing.html">Signal Processing</a><br>
+                    <a href="ee_embedded.html">Embedded Systems</a><br>
+                </div>
+            </div>
+            <div class="department">
+                <h3><a href="ba.html">Management School</a></h3>
+                <p>Our Business Administration department provides courses in management, finance, marketing, entrepreneurship, and organizational behavior, equipping students with the skills to lead in the business world.</p>
+                <div>
+                    <a href="ba_management.html">Management</a><br>
+                    <a href="ba_finance.html">Finance</a><br>
+                    <a href="ba_marketing.html">Marketing</a><br>
+                    <a href="ba_entrepreneurship.html">Entrepreneurship</a><br>
+                    <a href="ba_organizational_behavior.html">Organizational Behavior</a><br>
+                </div>
+            </div>
+        </div>
+
+        <h2>Student Statistics in Top Companies</h2>
+        <table>
+            <tr>
+                <th rowspan="2">Department</th>
+                <th colspan="2">Tech Companies</th>
+                <th colspan="2">Finance Companies</th>
+            </tr>
+            <tr>
+                <th>Google</th>
+                <th>Jazz</th>
+                <th>Telenor</th>
+                <th>IBM</th>
+            </tr>
+            <tr>
+                <td>Computer Science</td>
+                <td>200</td>
+                <td>180</td>
+                <td>50</td>
+                <td>60</td>
+            </tr>
+            <tr>
+                <td>Electrical Engineering</td>
+                <td>100</td>
+                <td>90</td>
+                <td>30</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Management</td>
+                <td>80</td>
+                <td>70</td>
+                <td>120</td>
+                <td>110</td>
+            </tr>
+        </table>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 FAST National University of Computer and Emerging Sciences</p>
+        <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Use</a></p>
+    </footer>
+
+</body>
+
+</html>
