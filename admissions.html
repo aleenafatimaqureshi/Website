@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions - FAST National University of Computer and Emerging Sciences</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            height: 150px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 2em;
+            letter-spacing: 1px; 
+            margin: 0; 
+            font-weight: 700;
+            text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            position: relative;
+            z-index: 2;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        nav {
+            background-color: #34495e;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+        }
+
+        nav ul li {
+            margin: 0 15px; 
+        }
+
+        nav a {
+            color: #ecf0f1;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 8px 12px; 
+            font-size: 0.9em; 
+            transition: background 0.3s, color 0.3s;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            background-color: #1abc9c;
+            color: #fff;
+            border-radius: 30px;
+        }
+
+        .admissions-form {
+            background-color: #34495e;
+            padding: 30px 15px; 
+            margin: 30px auto;
+            max-width: 800px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.5s ease-in-out;
+            position: relative;
+        }
+
+        .admissions-form h2 {
+            font-size: 2em; 
+            color: #1abc9c;
+            margin-bottom: 15px; 
+            text-align: center;
+        }
+
+        .admissions-form label {
+            font-size: 1em;
+            color: #bdc3c7;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .admissions-form input,
+        .admissions-form select,
+        .admissions-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px; 
+            border-radius: 5px;
+            border: none;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            font-size: 1em;
+        }
+
+        .admissions-form input[type="submit"] {
+            background-color: #1abc9c;
+            color: white;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .admissions-form input[type="submit"]:hover {
+            background-color: #16a085;
+        }
+
+        .admissions-form img.logo {
+            display: block;
+            margin: 20px auto; /* Center and space logo */
+            max-width: 150px; /* Adjust size */
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            border-top: 1px solid #1abc9c;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer a {
+            color: #1abc9c;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #16a085;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em; 
+            }
+
+            nav ul {
+                flex-direction: column;
+                padding: 0;
+            }
+
+            nav ul li {
+                margin: 8px 0; 
+            }
+
+            .admissions-form {
+                padding: 15px; 
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="admissions.html">Admission</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Admissions Opened at FAST University</h1>
+    </header>
+
+    <section class="admissions-form">
+        <h2>Apply for Admission</h2>
+        <img src="logo.png" alt="University Logo" class="logo"> <!-- Moved logo -->
+      
+        <form action="submit_form.php" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="address">Home Address:</label>
+            <textarea id="address" name="address" rows="3" required></textarea>
+
+            <label for="program">Program of Interest:</label>
+            <select id="program" name="program" required>
+                <option value="">Select a Program</option>
+                <option value="computing">Computing School</option>
+                <option value="engineering">Engineering School</option>
+                <option value="management">Management School</option>
+            </select>
+
+            <label for="previous-school">Previous School/College:</label>
+            <input type="text" id="previous-school" name="previous-school" required>
+
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+
+            <input type="submit" value="Submit Application">
+        </form>
+    </section>
+
+    <footer>
+        <p>Contact: 111-128-128</p>
+        <p>&copy; 2024 FAST National University. All Rights Reserved.</p>
+        <p>Campuses: Islamabad, Chiniot-Faisalabad, Karachi, Lahore, Peshawar</p>
+    </footer>
+
+</body>
+
+</html>

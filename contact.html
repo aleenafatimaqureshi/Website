@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - FAST National University of Computer and Emerging Sciences</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+      
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        nav {
+            background-color: #34495e;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav a {
+            color: #ecf0f1;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-size: 1em;
+            transition: background 0.3s, color 0.3s;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            background-color: #1abc9c;
+            color: #fff;
+            border-radius: 30px;
+        }
+
+        header {
+            padding: 20px;
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            font-weight: 700;
+            text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        .contact {
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .contact h2 {
+            font-size: 2.5em;
+            color: #1abc9c;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .contact p {
+            margin-bottom: 20px;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .contact-form {
+            background-color: #34495e;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        .contact-form label {
+            font-size: 1em;
+            color: #bdc3c7;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .contact-form input,
+        .contact-form select,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: none;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            font-size: 1em;
+        }
+
+        .contact-form input[type="submit"] {
+            background-color: #1abc9c;
+            color: white;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .contact-form input[type="submit"]:hover {
+            background-color: #16a085;
+        }
+
+        footer {
+            background-color: #34495e;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            border-top: 1px solid #1abc9c;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer a {
+            color: #1abc9c;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #16a085;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .contact-form input,
+            .contact-form select,
+            .contact-form textarea {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="admissions.html">Admission</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html" title="This leads you to About us Page.">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+
+    <section class="contact">
+        <h2>Get in Touch</h2>
+        <p>If you have any questions or need further information, please feel free to contact us using the form below.</p>
+
+        <div class="contact-form">
+            <form action="submit_contact.php" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>Contact: 111-128-128</p>
+        <p>&copy; 2024 FAST National University. All Rights Reserved.</p>
+        <p>Campuses: Islamabad, Chiniot-Faisalabad, Karachi, Lahore, Peshawar</p>
+    </footer>
+
+</body>
+</html>
